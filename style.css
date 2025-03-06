@@ -74,21 +74,33 @@ body {
 
 #backToTop {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 35px;
+  right: 35px;
   display: none;
   width: 45px;
   height: 45px;
-  line-height: 45px;
-  text-align: center;
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px var(--secondary);
   transition: all 0.3s ease;
+  background-color: var(--primary);
 }
+
+#backToTop i {
+  font-size: 20px; 
+  color: white; 
+}
+
+#backToTop i:hover {  
+  color: var(--secondary); 
+}
+
 
 #backToTop:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .form-control {

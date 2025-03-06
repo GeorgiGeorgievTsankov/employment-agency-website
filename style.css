@@ -22,11 +22,13 @@ body {
 
 .hero-section {
   position: relative;
-  background: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1920&h=1080&fit=crop') center/cover no-repeat;
+  background: url('./img/hero-employee.jpg') center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
-}
+  background-size: cover;
+  background-position: center;
+} 
 
 .hero-overlay {
   position: absolute;
@@ -126,3 +128,13 @@ footer a:hover {
   transform: translateY(-2px);
 }
 
+.employee-container {
+  background: linear-gradient(rgba(22, 0, 29, 0.5), rgba(0, 0, 0, 1)),
+    url("./img/employees-group.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

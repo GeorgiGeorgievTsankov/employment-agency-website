@@ -16,6 +16,19 @@ backToTopButton.addEventListener('click', () => {
   });
 });
 
+// Close navbar on link click
+const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+navbarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const navbarCollapse = document.getElementById('navbarNav');
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+      toggle: false
+    });
+    bsCollapse.hide();
+  });
+});
+
 // Form submission
 document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault();

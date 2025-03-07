@@ -1,17 +1,17 @@
 :root {
-  --primary: #0A3D62;
-  --secondary: #FFC312;
-  --light: #F8F9FA;
-  --white: #FFFFFF;
+  --primary: #0a3d62;
+  --secondary: #ffc312;
+  --light: #f8f9fa;
+  --white: #ffffff;
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: "Segoe UI", system-ui, sans-serif;
 }
 
 .navbar {
   background-color: var(--primary) !important;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
@@ -22,13 +22,13 @@ body {
 
 .hero-section {
   position: relative;
-  background: url('./img/hero-employee.jpg') center/cover no-repeat;
+  background: url("./img/hero-employee.jpg") center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
   background-size: cover;
   background-position: center;
-} 
+}
 
 .hero-overlay {
   position: absolute;
@@ -79,7 +79,7 @@ body {
   display: none;
   width: 45px;
   height: 45px;
-  border-radius: 50%; 
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,14 +90,13 @@ body {
 }
 
 #backToTop i {
-  font-size: 20px; 
-  color: white; 
+  font-size: 20px;
+  color: white;
 }
 
-#backToTop i:hover {  
-  color: var(--secondary); 
+#backToTop i:hover {
+  color: var(--secondary);
 }
-
 
 #backToTop:hover {
   transform: translateY(-3px);
@@ -110,7 +109,7 @@ body {
 
 .form-control:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 0.2rem rgba(10, 61, 98, 0.25);
+  box-shadow: 0 0 0 0.2rem var(--secondary);
 }
 
 footer {
@@ -149,4 +148,13 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#contact {
+  background: linear-gradient(rgba(2, 8, 120, 0.9), rgba(14, 13, 13, 0.981)),
+    url("./img/contanct.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
 }

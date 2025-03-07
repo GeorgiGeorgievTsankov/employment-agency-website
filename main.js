@@ -1,37 +1,37 @@
 // Back to Top Button
-const backToTopButton = document.getElementById('backToTop');
+const backToTopButton = document.getElementById("backToTop");
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 600) {
-    backToTopButton.style.display = 'block';
+window.addEventListener("scroll", () => {
+  if (window.scrollY < 600) {
+    backToTopButton.style.display = "none";
   } else {
-    backToTopButton.style.display = 'none';
+    backToTopButton.style.display = "block";
   }
 });
 
-backToTopButton.addEventListener('click', () => {
+backToTopButton.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 });
 
 // Close navbar on link click
-const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+const navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-navbarLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    const navbarCollapse = document.getElementById('navbarNav');
+navbarLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    const navbarCollapse = document.getElementById("navbarNav");
     const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-      toggle: false
+      toggle: false,
     });
     bsCollapse.hide();
   });
 });
 
 // Form submission
-document.querySelector('form').addEventListener('submit', (e) => {
+document.querySelector("form").addEventListener("submit", (e) => {
   e.preventDefault();
   // Add form handling logic here
-  alert('Благодарим за съобщението! Ще се свържем с вас скоро.');
+  alert("Благодарим за съобщението! Ще се свържем с вас скоро.");
 });

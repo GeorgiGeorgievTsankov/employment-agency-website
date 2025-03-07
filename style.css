@@ -22,7 +22,9 @@ body {
 
 .hero-section {
   position: relative;
-  background: url("./img/hero-employee.jpg") center/cover no-repeat;
+  /* background: url("./img/employees-group.jpg") center/cover no-repeat; */
+  background: linear-gradient(rgba(6, 14, 161, 0.5), rgba(6, 7, 57, 0.9)),
+    url("./img/employees-group.jpg");
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -141,7 +143,7 @@ footer a:hover {
 
 .employee-container {
   background: linear-gradient(rgba(22, 0, 29, 0.5), rgba(0, 0, 0, 1)),
-    url("./img/employees-group.jpg");
+    url("./img/hero-employee.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 60vh;

@@ -22,7 +22,6 @@ body {
 
 .hero-section {
   position: relative;
-  /* background: url("./img/employees-group.jpg") center/cover no-repeat; */
   background: linear-gradient(rgba(6, 14, 161, 0.5), rgba(6, 7, 57, 0.9)),
     url("./img/employees-group.jpg");
   min-height: 100vh;

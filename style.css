@@ -22,7 +22,7 @@ body {
 
 .hero-section {
   position: relative;
-  background: linear-gradient(rgba(6, 14, 161, 0.5), rgba(6, 7, 57, 0.9)),
+  background: linear-gradient(rgba(2, 8, 120, 0.5), rgba(14, 13, 13, 0.7)),
     url("./img/employees-group.jpg");
   min-height: 100vh;
   display: flex;
@@ -152,6 +152,17 @@ footer a:hover {
   align-items: center;
 }
 
+.call-us {
+  background: linear-gradient(rgba(2, 8, 120, 0.7), rgba(14, 13, 13, 0.7)),
+    url("./img/call-us.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #contact {
   background: linear-gradient(rgba(2, 8, 120, 0.9), rgba(14, 13, 13, 0.981)),
     url("./img/contanct.jpg");
@@ -159,4 +170,61 @@ footer a:hover {
   background-position: center;
   background-attachment: fixed;
   color: white;
+}
+
+
+/* Contact Banner */
+.contact-banner {
+  height: 60vh;
+  background: linear-gradient(135deg, var(--primary) 0%, #1e3c72 100%);
+  padding: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+
+.contact-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 35%;
+  background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.1) 100%);
+  transform: skewX(-20deg) translateX(50%);
+}
+
+.contact-banner h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-banner .btn-light {
+  background: var(--white);
+  color: var(--primary);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-banner .btn-light:hover {
+  background: var(--secondary);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact-banner {
+    text-align: center;
+  }
+  
+  .contact-banner .text-end {
+    text-align: center !important;
+    margin-top: 1rem;
+  }
+  
+  .contact-banner .d-flex {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
 }
